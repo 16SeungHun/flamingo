@@ -1,5 +1,35 @@
 # Changelog
 
+## Version v3.4.0 (2022-05-06)
+
+### Features
+
+- **core/oauth:** support issuer URL overriding (#227) (fa5bd34b)
+- **oauth:** add oauth identifier (#220) (9883a4dc)
+
+### Fixes
+
+- **oauth:** correctly map access-token claims (5a7331f3)
+- **auth:** add missing auth.Identity interface (#216) (27b93c16)
+- **deps:** exclude unmaintained redigo (#218) (6061f4ab)
+- fix missing gob register (0c488981)
+
+### Ops and CI/CD
+
+- **semanticore:** add semanticore (a741f30d)
+
+### Chores and tidying
+
+- bump go version to 1.17, replace golint with staticcheck (#222) (ae2b39e8)
+- **auth:** switch to github.com/gofrs/uuid (1854abc6)
+
+### Other
+
+- framework/flamingo: replace redis session backend (#219) (8451ed0b)
+- core/auth: update to recent go-oidc v3, allow oidc issuer URL override (#212) (86076485)
+- add comment to StateEntry (a8be5d77)
+- allow multiple parallel state responses (d7b30a06)
+
 ## Important Notes
 
 - core/internalauth:
